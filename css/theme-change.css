@@ -1,0 +1,92 @@
+
+    /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 47px;
+    height: 28px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(59, 60, 63, .9);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+    
+  
+    
+    /*defining values*/   
+  :root {
+      /* LIGHT (default) */
+    --main-bg-color: whitesmoke; 
+    --light-text-color-normal: hsl(0, 0%, 0%);
+    --light-text-color-light: hsl(0, 0%, 20%);
+    --light-text-color-richer: hsl(212, 12%, 24%);
+    --light-text-color-highlight: hsl(182, 84%, 73%);
+    --light-background-color: hsl(100, 100%, 100%);  
+    /* DARK */
+    --dark-text-color-normal: hsl(210, 10%, 62%);
+    --dark-text-color-light: hsl(210, 15%, 35%);
+    --dark-text-color-richer: hsl(210, 50%, 72%);
+    --dark-text-color-highlight: hsl(192, 70%, 45%);
+    --dark-background-color: #3b3c3f;
+    }
+
+
+  .switch input:checked {
+    background-color: var(--dark); 
+  }
+  
+  .switch {
+    background-color: var(--light);
+  }
