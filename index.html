@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/theme-change.css">
+    <style>
+        .dark {
+            background-color: #34373a !important;
+            color: white !important;
+            image-resolution: 0 !important;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a>Logo</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li style="float: right;">
+                <!-- DARK THEME TOGGLE -->
+                <div class="theme-switch" style="padding: 13px;">
+                    <div class="dark-toggle-switch" id="dark-checkbox"></div>
+                    <label class="switch">
+                    <input type="checkbox" id="checkbox-dark" onclick="toggleTheme()">
+                <span class="slider round">
+
+                </div>
+                
+                <script>
+                 // function to set a given theme/color-scheme
+                function setTheme(themeName) {
+                        localStorage.setItem('theme', themeName);
+                    document.documentElement.className = themeName;
+                    }
+
+                    // function to toggle between light and dark theme
+                function toggleTheme() {
+                        if (localStorage.getItem('theme') === 'theme-dark') {
+                            setTheme('theme-light');
+                        } else {
+                            setTheme('theme-dark');
+                        }
+                    }
+                
+                    // Immediately invoked function to set the theme on initial load
+                (function () {
+                        if (localStorage.getItem('theme') === 'theme-dark') {
+                            setTheme('theme-dark');
+                        } else {
+                            setTheme('theme-light');
+                        }
+                    })();
+                </script>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="hero-section">
+        <div class="top-heading">
+            <h1>Austin Sealy_</h1>
+        </div>
+
+        <div class="bottom-heading">
+            <h3>Portfolio</h3>
+        </div>
+
+        <div class="codeblock-right">
+            <h3>Code <i class="fas fa-circle" style="color: #28c840;"></i><i class="fas fa-circle" style="color: #febc2e;"></i><i class="fas fa-circle" style="color: #ff5f57;"></i></h3>
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <div class="columns-wrapper">
+            <div class="column">
+                <i class="fas fa-code"></i>
+                <p>Computer Science</p>
+
+                <p>
+                    HTML5, CSS3, JS, C# and Python and More.
+                </p>
+            </div>
+
+            <div class="column">
+                <i class="fas fa-wifi"></i>
+                <p>Electrical Engineering</p>
+
+                <p>
+                    PCB, Circut and Schematic design amd prototyping. 
+                </p>
+            </div>
+
+            <div class="column">
+                <i class="fas fa-pen-nib"></i>
+                <p>Graphic Design</p>
+
+                <p>
+                    Digital Art, Logo Design, Modern Graphics.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="About" class="aboutme">
+        <div class="squares-wrapper">
+            <div class="squares">
+                <div class="square">
+                    <div class="img-wrapper">
+                        <img src="images/PC.jpg" alt="#">
+                    </div>
+                
+                    <div class="square-text-wrapper">
+                        <a href="#" class="anchor-link">
+                            <h1>About Me</h1>
+                        </a>
+                    
+                        <ul>
+                            <li>Ive been programming for more than 8 years, dabbling in Game Development</li>
+                            <li>Artificial intelegence, and embeded programming.</li>
+                            <li>I also do a lot of art and design work.</li>
+                            <li>Everyone enjoys a good game or two as well, so I cant leave that out</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="square-text-wrapper">
+                        <a href="#" class="anchor-link">
+                            <h1>Intrests</h1>
+                        </a>
+                    
+                        <ul>
+                            <li>As said before, I enjoy Programming, Art and really anything creative</li>
+                            <li>I Love music and play several instruments, including Bass, Piano and Guitar</li>
+                            <li>Most of my music intrest revolves around jazz, but I love all music</li>
+                            <li>Electrical Engineering is also a big hobby of mine, I enjoy designing consepts for 8-bit computers!</li>
+                        </ul>
+                    </div>
+                
+                    <div class="img-wrapper">
+                        <img src="images/PC.jpg" alt="#">
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="img-wrapper">
+                        <img src="images/PC.jpg" alt="#">
+                    </div>
+                
+                    <div class="square-text-wrapper">
+                        <a href="#" class="anchor-link">
+                            <h1>Education</h1>
+                        </a>
+                    
+                        <ul>
+                            <li>Graduating high school in the very near future!</li>
+                            <li>TSA 1st place in 2 competitions, and 3rd in one.</li>
+                            <li>Up until this point ive only worked at resturants, but im hoping to get into the computer field soon.</li>
+                            <li>Completed several collage courses in the computer science field.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="square-text-wrapper">
+                        <a href="#" class="anchor-link">
+                            <h1>Current Projects</h1>
+                        </a>
+                    
+                        <ol>
+                            <li>Advanced physics simulations in Unity</li>
+                            <li>Blueberry: An intuitive music playlist properties editor</li>
+                            <li>More to come...</li>
+                        </ol>
+                    </div>
+                
+                    <div class="img-wrapper">
+                        <img src="images/PC.jpg" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- continue page here -->
+
+    <div class="project-portfolio">
+        <div class="title">
+            <h1>A Closer look<i class="fas fa-search-plus"></i></h1>
+            <hr>
+        </div>
+        <div class="projects">
+            <div class="blueberry">
+                <div class="subtitle">
+                    <h3>
+                        Blueberry: An Intuitive Music Manager
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="social-media-icons-wrapper">
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="https://github.com/CtrlAustin">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="mailto:absealy04@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <div class="copyright-wrapper">
+            &copy; Austin Sealy 2021 &#124; All rights reserved
+        </div>
+    </div>
+</body>
+</html>
