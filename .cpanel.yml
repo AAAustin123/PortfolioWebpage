@@ -2,6 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/example/public_html/
-    - /bin/cp -R repositories/Portfoliokeypage/images $DEPLOYPATH
-    - /bin/cp -R repositories/Portfoliokeypage/css $DEPLOYPATH
-    - /bin/cp repositories/Portfoliokeypage/index.html $DEPLOYPATH
+    - /bin/cp -R repositories/Portfoliokebpage/images $DEPLOYPATH
+    - /bin/cp -R repositories/Portfoliokebpage/css $DEPLOYPATH
+    - /bin/cp repositories/Portfoliokebpage/index.html $DEPLOYPATH
