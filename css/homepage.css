@@ -88,13 +88,30 @@ li a:not(:hover) {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    backdrop-filter: brightness(80%);
+}
+
+.hero-section .top-photo {
+    height: 80px;
+    width: 80px;
+    border-radius: 90px;
+    background-image: url(../images/pfp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section .photo-wrapper {
+    padding: 10px;
+    padding-right: 30px;
 }
 
 .hero-section > .top-heading {
+    display: flex;
     padding: 1px 20px;
     background-color: var(--transperent-bg1);
     color: var(--text-color1);
-    width: 13%;
+    width: 20%;
     border-radius: 8px;
 }
 
@@ -102,10 +119,10 @@ li a:not(:hover) {
     color: var(--text-color1);
     padding: 1px 20px;
     margin-top: 0px;
-    width: 107px;
+    /* width: 107px; */
     border-radius: 2px;
 }
-
+/* 
 .hero-section > .codeblock-right {
     color: var(--text-color1);
     float: right;
@@ -130,7 +147,7 @@ li a:not(:hover) {
 .hero-section > .codeblock-right > p {
     padding: 15px;
 
-}
+} */
 
 h3 i {
     height: min-content;
